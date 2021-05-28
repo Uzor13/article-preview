@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Manrope", sans-serif;
+}
+
+h1 {
+	font-weight: 700;
+	color: hsl(217, 19%, 35%);
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+p {
+	font-weight: 500;
+	color: hsl(214, 17%, 51%);
+	line-height: 1.5rem;
+	font-size: 0.9rem;
+}
+
+body {
+	height: 100vh;
+	background-color: hsl(210, 46%, 95%);
+	font-size: 13px;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 80%;
+	min-height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 1rem;
+}
+
+.card-img {
+	width: 100%;
+}
+.card-img img {
+	max-width: 100%;
+	height: 100%;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+	padding: 1.2rem 1.5rem 0 1.5rem;
+}
+
+.card-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+.card-profile {
+	display: flex;
+}
+.card-footer--avatar {
+	width: 40px;
+	height: 40px;
+}
+.card-footer--avatar img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.card-footer--info {
+	padding-left: 0.7rem;
+}
+.card-footer--info h1 {
+	font-size: 1rem;
+}
+.card-footer--share , .card-footer--active__share {
+	width: 30px;
+	height: 30px;
+	background-color: hsl(210, 46%, 95%);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-footer--active {
+	width: 100%;
+	height: 3rem;
+	background-color: hsl(217, 19%, 35%);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	display: none;
+	margin-top: 0.9rem;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	padding-top: 1rem;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 838px) {
+	.card {
+		flex-direction: row;
+		width: 70%;
+	}
+	.card-main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.card-img img {
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 1rem;
+	}
+    h1 {
+        font-size: 1.5rem;
+    }
+    .card-footer--active {
+        border-radius: 0;
+        margin-top: 2rem;
+    }
+}
